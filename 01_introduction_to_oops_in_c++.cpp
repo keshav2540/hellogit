@@ -10,10 +10,6 @@ compile time(fun overloading,oprator over loading)
 runtime(fun over ridding using virtual)
 abstraction is the process of hiding the internal implementation and show only essntial fun to the user pure virtual fun 
 
-*/
-#include <iostream>
-#include <vector>
-#include<algorithm>
 using namespace std;
 class person{
      public:
