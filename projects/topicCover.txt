@@ -1,0 +1,11 @@
+struct key word
+constructor and its type default, perameteraised,copy
+fun overloading 
+setter and getter
+arr of user defind fun
+constructer overloading
+acces specifier public private and protected
+type of object static and dynamic
+use of this pointer 
+fun define outside class using scope resoluation operator
+diffrence between method(member perameter and function of class ) and atributes(static and data)

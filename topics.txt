@@ -1,0 +1,569 @@
+📘 Expanded OOP in C++ 45-Day Roadmap (Beginner → Mastery, Day-wise with Extra Sub-topics + Suggestions + File Names)
+
+🔹 Week 1–2 (Beginner Concepts)
+
+Day 1: Introduction to OOPs in C++  [File: 01_intro_oops.cpp]
+- Procedural vs OOP approach
+- Features of OOPs (Encapsulation, Inheritance, Polymorphism, Abstraction)
+- Why OOPs is needed
+- Real-life case studies (Banking, Student system)
+💡 Suggestion: Write a program comparing procedural vs OOP for student data.
+
+Day 2: Class & Object (Basics)  [File: 02_class_object.cpp]
+- Defining a class
+- Creating objects
+- Accessing members (. operator)
+- Memory layout of object
+- Anonymous objects
+💡 Practice: Make a Car class with attributes and create 3 objects.
+
+Day 3: Data Members & Member Functions  [File: 03_data_members_functions.cpp]
+- Instance variables
+- Member functions inside vs outside class
+- Scope resolution operator ::
+- Inline vs non-inline functions
+💡 Practice: Create a Rectangle class with area & perimeter functions.
+
+Day 4: Access Specifiers  [File: 04_access_specifiers.cpp]
+- Public, Private, Protected
+- Default access level in class & struct
+- Example with restricted access
+- Importance of protected in inheritance
+💡 Suggestion: Make a class with private constructor (Singleton intro).
+
+Day 5: Constructors – Default  [File: 05_default_constructor.cpp]
+- Syntax of default constructor
+- Automatic call when object is created
+- Example with initialization
+- Constructor delegation
+💡 Practice: Create a Student class with default constructor initializing default values.
+
+Day 6: Constructors – Parameterized  [File: 06_parameterized_constructor.cpp]
+- Syntax of parameterized constructor
+- Passing values during object creation
+- Example with multiple parameters
+- Explicit constructors
+💡 Practice: Create a Book class with parameterized constructor for title & author.
+
+Day 7: Copy Constructor  [File: 07_copy_constructor.cpp]
+- Default copy constructor
+- Shallow copy vs Deep copy
+- Example with pointers
+- Assignment operator (operator= deep copy)
+💡 Practice: Implement Student class with copy constructor handling dynamic char array.
+
+Day 8: Destructor  [File: 08_destructor.cpp]
+- Syntax (~ClassName)
+- When destructor is called
+- Destructor vs delete
+- Order of constructor & destructor calls
+💡 Practice: Create linked list node class with destructor freeing memory.
+
+Day 9: this Pointer + Encapsulation  [File: 09_this_pointer_encapsulation.cpp]
+- Use of this pointer
+- Encapsulation (private data, public methods)
+- Getter & Setter functions
+- Chaining setters using return *this
+💡 Practice: Create BankAccount class with encapsulated balance and setter chaining.
+
+Day 10: Static Data Members  [File: 10_static_data_members.cpp]
+- Syntax of static data member
+- Sharing value among all objects
+- Static initialization rules
+💡 Practice: Create a counter for number of objects created using static members.
+
+Day 11: Static Member Functions  [File: 11_static_member_functions.cpp]
+- Syntax of static member function
+- Accessing static data members
+- Limitations of static functions
+💡 Practice: Create a MathUtility class with static functions add, subtract.
+
+Day 12: Const in Classes  [File: 12_const_in_classes.cpp]
+- Constant objects
+- Const member functions
+- Const pointers and const return types
+💡 Practice: Create constant object of Student class and access only const functions.
+
+Day 13: Friend Functions  [File: 13_friend_functions.cpp]
+- Syntax of friend function
+- Accessing private data
+- Overloading << operator with friend
+💡 Practice: Write a friend function to display private data of Employee class.
+
+Day 14: Friend Classes + Inline Functions  [File: 14_friend_classes_inline.cpp]
+- Friend class syntax
+- Use cases (DBMS, Compiler design)
+- Inline functions in class
+💡 Practice: Create Teacher and Student classes with friend class relationship.
+
+Revision of Week 1–2
+
+
+🔹 Week 3–4 (Intermediate Concepts)
+
+Day 15: Operator Overloading – Arithmetic  [File: 15_operator_overloading_arithmetic.cpp]
+- Overloading +, -, *
+- Example (Complex numbers class)
+- Unary operators ++, --
+💡 Practice: Implement Complex class with operator+ and operator-.
+
+Day 16: Operator Overloading – Stream  [File: 16_operator_overloading_stream.cpp]
+- Overloading << and >>
+- Example (printing objects)
+- Formatting stream output
+💡 Practice: Print Student object with custom formatting.
+
+Day 17: Operator Overloading – Comparison  [File: 17_operator_overloading_comparison.cpp]
+- Overloading ==, <, >
+- Example (student marks comparison)
+- Overloading !=
+💡 Practice: Compare Employee salaries using operator overloading.
+
+Day 18: Inheritance – Single  [File: 18_inheritance_single.cpp]
+- Syntax of single inheritance
+- Example (Base & Derived class)
+- Access specifier effect on inheritance
+💡 Practice: Person → Student inheritance.
+
+Day 19: Inheritance – Multilevel  [File: 19_inheritance_multilevel.cpp]
+- Syntax of multilevel inheritance
+- Example (Grandparent → Parent → Child)
+💡 Practice: Vehicle → Car → ElectricCar.
+
+Day 20: Inheritance – Multiple  [File: 20_inheritance_multiple.cpp]
+- Syntax of multiple inheritance
+- Example program
+- Ambiguity problem
+💡 Practice: Person + Worker → TeachingAssistant.
+
+Day 21: Constructor in Inheritance  [File: 21_constructor_in_inheritance.cpp]
+- Constructor calling order
+- Base & Derived class constructor example
+- Virtual base constructor call
+💡 Practice: Create derived class calling base constructor explicitly.
+
+Day 22: Function Overloading  [File: 22_function_overloading.cpp]
+- Compile-time polymorphism
+- Function overloading rules
+- Default arguments in overloading
+💡 Practice: Overload add() for int, float, double.
+
+Day 23: Function Overriding  [File: 23_function_overriding.cpp]
+- Runtime polymorphism
+- Example with base & derived class functions
+- Covariant return type
+💡 Practice: Shape → Circle, Rectangle overriding area() function.
+
+Day 24: Virtual Functions  [File: 24_virtual_functions.cpp]
+- Virtual function syntax
+- Pointer to base class
+- Vtable concept
+💡 Practice: Demonstrate base pointer pointing to derived object.
+
+Day 25: Pure Virtual Functions & Abstract Classes  [File: 25_abstract_classes.cpp]
+- Syntax of pure virtual function
+- Abstract class example
+- Interface-like behavior
+💡 Practice: Abstract Animal class with Dog and Cat derived classes.
+
+Day 26: Virtual Base Classes (Diamond Problem)  [File: 26_virtual_base_classes.cpp]
+- Diamond problem explanation
+- Solution using virtual base class
+💡 Practice: Person → Student, Teacher → Assistant (diamond problem).
+
+Day 27: Dynamic vs Static Binding  [File: 27_dynamic_vs_static_binding.cpp]
+- Binding concept
+- Example of dynamic binding (virtual)
+- Example of static binding
+💡 Practice: Create base and derived class functions to show both bindings.
+
+Day 28: Mini Project – Library Management (OOP only)  [File: 28_project_library_management.cpp]
+- Classes: Book, Library, User
+- Operations: Add, Issue, Display
+
+
+🔹 Week 5–6 (Advanced Concepts)
+
+Day 29: Templates – Function Templates  [File: 29_function_templates.cpp]
+- Syntax of function template
+- Example with swap() function
+- Template specialization
+💡 Practice: Write generic max() function.
+
+Day 30: Templates – Class Templates  [File: 30_class_templates.cpp]
+- Syntax of class template
+- Example (Stack class template)
+- Template specialization
+💡 Practice: Implement generic Stack class.
+
+Day 31: Exception Handling – Basics  [File: 31_exception_handling_basics.cpp]
+- try, catch, throw syntax
+- Simple exception example
+- Exception propagation
+💡 Practice: Handle division by zero.
+
+Day 32: Exception Handling – Multiple Catch Blocks  [File: 32_exception_handling_multiple.cpp]
+- Multiple catch usage
+- Example (divide by zero, invalid input)
+- Catch all handler (...)
+💡 Practice: Program with multiple catch blocks.
+
+Day 33: File Handling – Basics  [File: 33_file_handling_basics.cpp]
+- ifstream, ofstream
+- Reading and writing to files
+- File open modes
+💡 Practice: Write and read student details from file.
+
+Day 34: File Handling with Objects  [File: 34_file_handling_objects.cpp]
+- Writing objects to file
+- Reading objects from file
+- Serialization basics
+💡 Practice: Save Employee objects to file.
+
+Day 35: File Handling – Append & Binary Files  [File: 35_file_handling_binary.cpp]
+- Append mode in file
+- Binary file read/write
+- Random access using seekg/seekp
+💡 Practice: Append new data to student database.
+
+Day 36: Dynamic Objects  [File: 36_dynamic_objects.cpp]
+- Difference between stack & heap objects
+- new and delete keywords
+- Array of objects dynamically
+- Smart pointers intro
+💡 Practice: Implement linked list with dynamic allocation.
+
+Day 37: Pointer to Object + Advanced this Use  [File: 37_pointer_to_object.cpp]
+- Pointer to object syntax (->)
+- Accessing members via pointer
+- Returning *this from functions
+💡 Practice: Demonstrate object pointer accessing functions.
+
+Day 38: Mini Project – Student Report System  [File: 38_project_student_report.cpp]
+- Student class with marks
+- File handling for storing student data
+- Add, Display, Search
+
+
+🔹 Week 7 (Professional / Mastery Level)
+
+Day 39: Static vs Dynamic Polymorphism  [File: 39_static_vs_dynamic_polymorphism.cpp]
+- Compare function overloading vs overriding
+- Vtable and vptr deep dive
+💡 Practice: Demonstrate both with examples.
+
+Day 40: Virtual Destructor  [File: 40_virtual_destructor.cpp]
+- Problem without virtual destructor
+- Example with base pointer deleting derived object
+💡 Practice: Implement virtual destructor for base class.
+
+Day 41: Abstract Class vs Interface Style in C++  [File: 41_interface_style.cpp]
+- Using pure virtual functions
+- Interface-like behavior
+💡 Practice: Implement multiple interface-like abstract classes.
+
+Day 42: Custom Exception Class  [File: 42_custom_exception.cpp]
+- Create exception class
+- Throwing objects as exception
+- Custom exception hierarchy
+💡 Practice: Implement BankException for insufficient balance.
+
+Day 43: File Handling – Bank Management System  [File: 43_project_bank_management.cpp]
+- Classes: Account, Transaction
+- File handling for storing accounts
+- Search, Update, Delete
+💡 Practice: Build simple banking system with file handling.
+
+Day 44: OOP Best Practices in C++  [File: 44_best_practices.cpp]
+- RAII concept
+- Encapsulation, Modularity, Reusability
+- SOLID principles
+- Naming conventions
+💡 Practice: Implement RAII wrapper class for File handling.
+
+Day 45: Capstone Project – Inventory/Banking System  [File: 45_capstone_project.cpp]
+- Classes, Inheritance, Polymorphism, File handling
+- CRUD operations
+- Exception handling
+- Professional OOP-based project
+
+Day 46: Namespaces  [File: 46_namespaces.cpp]
+- What are namespaces
+- Why we use them (avoid naming conflicts)
+- Syntax: namespace, nested namespace
+- Using "using" directive
+💡 Practice: Create two namespaces with same function name and call them separately.
+
+Day 47: Operator new & delete  [File: 47_new_delete.cpp]
+- Difference between malloc/free and new/delete
+- Syntax of new (single object, array)
+- Syntax of delete
+- Customizing new/delete operators
+💡 Practice: Dynamically allocate an array of integers using new and free it with delete.
+
+Day 48: Exception Handling Basics  [File: 48_exception_handling.cpp]
+- Why exceptions are needed
+- Syntax: try, catch, throw
+- Multiple catch blocks
+- Catching all exceptions (catch(...))
+💡 Practice: Write a program to divide two numbers and throw exception if denominator is zero.
+
+Day 49: Advanced Exception Handling  [File: 49_adv_exceptions.cpp]
+- User-defined exceptions (custom class)
+- Exception propagation (rethrowing)
+- Stack unwinding
+- Standard exception classes (std::exception)
+💡 Practice: Create a custom exception NegativeValueException and throw it when user enters a negative number.
+
+Day 50: Smart Pointers  [File: 50_smart_pointers.cpp]
+- Problem of raw pointers (memory leaks)
+- unique_ptr (single owner)
+- shared_ptr (reference counting)
+- weak_ptr (non-owning reference)
+💡 Practice: Manage a Student object with shared_ptr and show how reference count works.
+
+Day 51: Move Semantics & Rvalue References  [File: 51_move_semantics.cpp]
+- Copy constructor vs Move constructor
+- && (rvalue reference)
+- std::move() usage
+- Why move is more efficient
+💡 Practice: Create a class with dynamic array and implement both copy and move constructor.
+
+Day 52: Function Pointers & Callbacks  [File: 52_function_pointers.cpp]
+- What is function pointer
+- Syntax of declaring and calling
+- Callback functions using pointers
+- Function pointer arrays
+💡 Practice: Create two functions add() and subtract(), store them in a function pointer, and call dynamically.
+
+Day 53: Lambda Expressions  [File: 53_lambda.cpp]
+- Syntax of lambda: [](){}
+- Capturing variables ([=], [&])
+- Passing lambda to algorithms (for_each, sort)
+- Return type of lambda
+💡 Practice: Sort an array of integers in descending order using lambda with std::sort.
+
+Day 54: RTTI (Run-Time Type Information)  [File: 54_rtti.cpp]
+- What is RTTI
+- typeid operator
+- dynamic_cast with polymorphism
+- Difference between static_cast and dynamic_cast
+💡 Practice: Create a base class Animal and derived classes Dog, Cat. Use dynamic_cast to identify type at runtime.
+
+Day 55: Design Patterns Intro  [File: 55_design_patterns_intro.cpp]
+- What are design patterns (reusable OOP solutions)
+- Categories: Creational, Structural, Behavioral
+- Why they are important in real projects
+💡 Practice: Write short notes on 3 real-world problems where design patterns can be applied.
+
+Day 56: Singleton Pattern  [File: 56_singleton.cpp]
+- Problem: only one instance should exist (e.g., Logger, Database)
+- Private constructor + static method
+- Thread-safety in Singleton (basic)
+💡 Practice: Implement a Singleton Logger class and print logs from multiple calls.
+
+Day 57: Factory Pattern  [File: 57_factory.cpp]
+- Problem: Creating objects without exposing logic to client
+- Factory method design
+- Example: Shape factory (Circle, Square)
+💡 Practice: Implement a factory that creates different vehicle objects (Car, Bike).
+
+Day 58: Observer Pattern  [File: 58_observer.cpp]
+- Problem: Notify multiple objects when one changes state
+- Publisher–Subscriber model
+- Example: Stock price update system
+💡 Practice: Implement an Observer for weather updates (temperature, humidity).
+
+Day 59: Strategy Pattern  [File: 59_strategy.cpp]
+- Problem: Change algorithm at runtime
+- Define family of algorithms (interface)
+- Example: Payment methods (Card, UPI, NetBanking)
+💡 Practice: Implement a payment strategy system where user chooses method at runtime.
+
+Day 60: Revision & Project  [File: 60_revision_project.cpp]
+- Combine OOP concepts + patterns into a mini project
+- Suggested project: Student Management System with smart pointers, exceptions, and factory pattern
+💡 Practice: Implement Student Management with add/search/remove, using design patterns.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Object-Oriented Programming or OOP's refers to the language that uses objects in programming. It is primarily concerned with the implementation of real-world entities such as inheritance, polymorphism, etc. in programming. For instance - in the class of Living Things; Humans, Animals, Plants, Microorganism, etc. are known as an object. OOP is used to solve real-world problems. OOP has several additional advantages like faster and easier to execute, provide a clear structure to the program which makes others easier to read the code, it uses the DRY principle "Don't Repeat Yourself" which makes code easy to maintain modify and debug.
+
+Also, OOP is not only important for Academic Exams but also very crucial in Interviews, especially for Fresher's Interviews. There are a lot of topics in OOP and in this roadmap, we will discuss all these topics in sequence. If any fresher or Student will follow this Roadmap, he/she will definitely crack the Interview as well as College or University Exams based on OOPs Programming.
+1. First Step
+
+Before moving forward for learning OOP's Concept, one must have basic knowledge about the fundamentals and syntax of C++, Java, Python, or any other relevant programming language. It will help you to implement the OOPs concepts in programming conveniently.
+2. Second Step
+
+After that, you must follow the Overview Points of OOP's concept like:
+
+    What Is Object-Oriented Programming?
+    Object-Oriented Programming relation with the real world and how real-world problems can be solved by it.
+    Why we Study Object-Oriented Programming and why it is important to learn?
+    Limitations and advantages of OOP
+    Difference between Procedural and Object-Oriented Programming?
+    Why OOP is preferred over Procedural Programming Language?
+
+So, before diving deep into the OOP concepts - one must have knowledge about the above questions. For answers or reference to these one can follow - GeeksforGeeks website or any recommended book. The important books for learning OOP are as follows:
+
+    For C++ : Object-Oriented Programming with C++ by E.Balagurusamy.
+    For JAVA : Java: The Complete Reference by Herbert Schildt.
+    For Python: Mastering Object-oriented Python Book by Steven F. Lott.
+
+3. Third Step
+
+Now after following the above steps we will move further about the Pillar's of Object-Oriented Programming Language as follows:
+
+    What is Class
+    What is Object
+    Difference between Class and Object.
+    Use of Classes and Object Inside and Outside of Main Class.
+    Can Class and Object exist or use Individually?
+    Real-World Analogy Of Class and Object.
+    Access Modifiers (public, private, protected, etc.)
+    Member Function(Inner and Outer class function)
+
+4. Fourth Step
+
+Important Keywords to learn:
+
+    Static Keyword
+    Virtual Keyword
+    Abstract Keyword
+    Final Keyword
+    Explicit keyword
+    This Keyword
+    new Keyword
+    const keyword
+    super keyword
+
+One must have knowledge about these keywords like their definition, uses, pros, and cons, etc., and why it is important to learn.
+5. Fifth Step
+
+Constructor and Destructor :
+
+    Definition and Working.
+    Rules and Types.
+    Purpose of Using Constructor and Destructor
+    Difference between Constructor and Methods (In Java)
+    Can Constructor Perform Other Task rather than Initialization?
+    Does Constructor Return any value?
+    Constructor vs Destructor.
+    Is there any Constructor Class?
+
+6. Sixth Step
+
+Features of OOPS
+
+Polymorphism: In this, one must know:
+
+    What is Polymorphism
+    Categories: Function/Operator overloading, Compile time polymorphism, Function overriding, Runtime Polymorphism
+    Which function can be overloaded and which functions can't be overloaded with explanation
+    Virtual function
+    Dynamic Binding
+    Virtual Class
+    Derived Class
+    Inline Virtual Function
+    Abstract Class
+    Pure virtual function
+    Pure Virtual Destructor
+    Instanceof Operator
+
+Inheritance:
+
+    Subclass
+    Superclass
+    Reusability
+    Need for Inheritance
+    Can OOP exist without Inheritance
+    Inheritance types (Single, Multiple, Hierarchical, Multilevel, Hybrid, Virtual Inheritance)
+    Real-life examples of Inheritance
+    Limitation of Inheritance
+    Sealed Modifier
+    Object Slicing
+
+Encapsulation
+
+    Definition
+    Need
+    How to achieve
+    Real-World Example
+    Packages (In Java)
+
+Abstraction
+
+    Definition
+    When to use
+    How to Achieve
+    Difference between Inheritance and Abstraction
+    Difference between Encapsulation and Abstraction
+
+Other's
+
+    Dynamic Binding
+    Message Passing
+    Object Cloning
+    Wrapper Class
+
+So there are the important OOPs topics for Interview and Academic Examination which if followed properly will sure get you the success.
+
+Also, these topics must be covered by following the important  principle of learning:
+
+    Get in-depth knowledge about the topic.
+    Must know Implementation details.
+    How it is related to the real world.
+
+7. Seventh Step
+
+    Important Interview Questions Of OOP Concept:
+    C vs C++ vs Java vs Python (Just get the idea of how they are different)
+    Difference between Procedural and OOP language?
+    Why Java is not a pure Object-Oriented Programming Language?
+    Is an Array a Primitive type or an Object in Java?
+    What is early and late binding?
+    What is the default access modifier?
+    How many instances can be created for an abstract class?
+    Define Garbage Collection and how does it work?
+    Define Manipulators?
+    What do you mean by Final block?
+    What is the final variable?
+    What do you mean by exception?
+    Is an error basically the same as an exception?
+    It is possible for a class to inherit the constructor of its base class?
+    When Should we use Structure instead of Class?
+    Difference and Similar between Struct and class?
+    Scope Resolution operator
+    What is Deep/Shallow Copy?
+    Copy Constructor vs Assignment Operator
+    Can we have more than one value in class?
+    How destructors are different from normal member function?
+    Difference between new and override?
+    Does Overriding Works with Inheritance?
+    Generalization vs Aggregation vs Composition
+
+Important Object-Oriented Designing:
+
+    Design a HASH map
+    Design LRU cache
+    Design a call Center
+    Design a Deck of Cards
+    Design a parking lot
+    Design an Online Chat System
+    Design an Address Book
+    Design Bank Management System
+    Design an ATM
+    Design Hotel Management System
+    Design Library Management System
